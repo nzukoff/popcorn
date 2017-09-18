@@ -4,7 +4,10 @@
     <li>ID: <%= @movie.id %></li>
     <li>NAME: <%= @movie.name %></li>
     <li>YEAR: <%= @movie.year %></li>
+    <img src= <%=@movie.poster%>
 </ul>
+
 
 <%= link_to "Delete", @movie, method: :delete %>
     
+<%= link_to "All Movies", movies_path %>

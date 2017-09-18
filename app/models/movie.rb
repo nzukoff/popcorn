@@ -7,6 +7,7 @@
 #  year       :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  poster     :string
 #
 
 class Movie < ApplicationRecord
