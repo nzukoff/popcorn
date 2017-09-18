@@ -1,0 +1,10 @@
+<h1>Movie <%= @movie.id %> Detail</h1>
+
+<ul>
+    <li>ID: <%= @movie.id %></li>
+    <li>NAME: <%= @movie.name %></li>
+    <li>YEAR: <%= @movie.year %></li>
+</ul>
+
+<%= link_to "Delete", @movie, method: :delete %>
+    
