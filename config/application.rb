@@ -9,6 +9,9 @@ Bundler.require(*Rails.groups)
 module Popcorn
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
+    config.generators do |g|
+      g.fixture_replacement :factory_girl, dir: "spec/factories"
+    end
     config.load_defaults 5.1
 
     # Settings in config/environments/* take precedence over those specified here.
